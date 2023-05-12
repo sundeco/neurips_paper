@@ -1,0 +1,25 @@
+expname = 
+logsdir = ../logs
+srcdir = ../src
+traindatadir = /n/newberry/v/jashu/scoreMatchingFull/data/purple/purpletrain.mat
+valdatadir = /n/newberry/v/jashu/scoreMatchingFull/data/purple/purplevalid.mat
+datadir = ../data/coilimages.mat
+
+netdepth = 20
+netwidth = 512
+
+nepochs = 1000
+lr = 0.00005
+optim = adam
+batchsize = 5
+validfrac = 0.2
+
+do_online_test = True
+online_test_epoch_gap = 10
+
+patchsize = 7
+overlap = 1
+sigma = 0.01
+
+loss_fun = l2
+gpu_ids = 0
